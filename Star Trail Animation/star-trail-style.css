@@ -11,6 +11,7 @@ html, body {
 body{
       height: 100vh;
       background-color: black;
+      overflow: hidden;
 }
 span{
       width: 100px;
@@ -27,11 +28,13 @@ span{
 
 @keyframes animate {
       0%{
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%) rotate(0deg);
             opacity: 1;
+            filter: hue-rotate(0);
       }
       100%{
-            transform: translate(-50%,-5000%);
+            transform: translate(-50%,-5000%)rotate(720deg);
             opacity: 0;
+            filter: hue-rotate(720deg);
       }
 }
